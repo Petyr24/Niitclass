@@ -1,0 +1,25 @@
+body {
+    background-color: darkcyan;
+}
+
+button {
+    background-color: rgb(2252, 164, 28);
+    color: black;
+    border: none;
+    height: 40px;
+    width: 130px;
+    border-radius: 18px;
+    font-size: 17px;
+    cursor: pointer;
+    margin-left: 8px;
+}
+
+section {
+    margin-left: 30%;
+    margin-right: 30%;
+    background-color: cornsilk;
+}
+
+h2 {
+    text-align: center;
+}

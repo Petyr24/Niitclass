@@ -1,0 +1,41 @@
+body {
+    background-color: darkcyan;
+}
+
+.intro {
+    margin-left: 30%;
+    margin-right: 30%;
+    background-color: burlywood;
+}
+
+.where {
+    margin-left: 30%;
+    margin-right: 30%;
+    background-color: cornsilk;
+}
+
+.jsoutput {
+    margin-left: 30%;
+    margin-right: 30%;
+    background-color: gainsboro;
+}
+
+h2 {
+    text-align: center;
+}
+
+button {
+    background-color: rgb(225, 164, 28);
+    color: black;
+    border: none;
+    height: 40px;
+    width: 130px;
+    border-radius: 18px;
+    font-size: 17px;
+    cursor: pointer;
+    margin-left: 8px;
+}
+
+p {
+    text-indent: 20px;
+}

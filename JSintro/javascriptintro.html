@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <script>
+        function myFunction() {
+            document.getElementById("de").innerHTML = "Paragraph changed.";
+        }
+    </script>
+    <link rel="stylesheet" href="javascriptintro.css">
+</head>
+<body>
+    <section class="intro">
+        <div>
+            <h2>What Can JavaScript Do?</h2>
+            <p>JavaScript accepts both double and single quotes:</p>
+            <p id="demo">JavaScript can change HTML content.</p>
+
+            <button type="button" onclick="document.getElementById('demo').innerHTML = 'Hello JavaScript'">Click Me!</button>
+        </div>
+        <div>
+            <h2>What Can JavaScript Do?</h2>
+
+            <p>JavaScript cann change HTML attribute values.</p>
+
+            <p>In this case JavaScript changes the value of the src(source) attribute of an image.</p>
+            <button onclick="document.getElementById('myImage').src='../Media/pic_bulbon.gif'">Turn on the light</button>
+            <img id="myImage" src="../Media/pic_bulboff.gif" style="width: 100px;">
+
+            <button onclick="document.getElementById('myImage').src='../Media/pic_bulboff.gif">Turn off the light</button>
+        </div>
+        <div>
+            <h2>What Can JavaScript Do?</h2>
+
+            <p id="demi">JavaScript can change the style of an HTML element.</p>
+
+            <button type="button" onclick="document.getElementById('demi').style.fontSize='35px'">Click Me!</button>
+        </div>
+        <div>
+            <h2>What Can JavaScript Do?</h2>
+
+            <p>JavaScript can show hidden HTML element.</p>
+
+            <p id="demp" style="display: none;">Hello JavaScript!</p>
+
+            <button type="button" onclick="document.getElementById('demp').style.display='block'">Click Me!</button>
+        </div>
+    </section>
+    <section class="where">
+        <div>
+            <h2>JavaScript in Body</h2>
+            <p>In HTML, JavaScript code is inserted between
+                <script> and </script> tags.
+            </p>
+            <p id="den"></p>
+
+            <script>
+                document.getElementById('den').innerHTML = "My First JavaScript";
+            </script>
+        </div>
+        <div>
+            <h2>Demo JavaScript in Head</h2>
+
+            <p id="de">A Paragraph</p>
+
+            <button type="button" onclick="myFunction()">Try it</button>
+        </div>
+        <div>
+            <h2>Demo External JavaScript</h2>
+
+            <p id="exjs">A Paragraph</p>
+
+            <button type="button" onclick="youFunction()">Try it</button>
+
+            <p>This example links to "myScript.js"</p>
+            <p>(myFunction is stored in "myScript.js")</p>
+        </div>
+    </section>
+
+    <section>
+        <section class="jsoutput">
+            <div>
+                <h2>JavaScript Output</h2>
+                <p>JavaScript can "display" data in different ways:</p>
+                <p>Writing into an HTML element, using innerHTML.</p>
+                <p>Writing into the HTML output using document.write().</p>
+                <p>Writing into an alert box, using window.alert().</p>
+                <p>Writing into the browser console, using console.log().</p>
+            </div>
+            <div>
+                <h2>Using innerHTML</h2>
+                <p>To access an HTML element, JavaScript can use the document.getElementById(id) method.</p>
+                <p>The id attribute defines the HTML element. The innerHTML property defines the HTML content:</p>
+                <p id="dip"></p>
+            </div>
+            <div>
+                <h2>Using document.write()</h2>
+                <p>For testing purpose, it is convenient to use document.write():</p>
+
+                <p>Never call document.write after the document has finished loading. It wil overwrite the whole document.</p>
+
+                <script>document.write(50 + 65);</script>
+
+                <button type="button" onclick="document.write(5 + 6)">Try it</button>
+            </div>
+            <div>
+                <h2>Using window.alert()</h2>
+
+                <p>You can use an alert box to display data:</p>
+
+                <script>window.alert(5 + 6)</script>
+
+                <p>You can skip the window keyword.</p>
+
+                <p>In JavaScript, the window object is the global scope object. This means that variables, properties, and methods by default belong to the window object. This also means that specifying the window keyword is optional:</p>
+
+                <script>alert(5 * 6);</script>
+            </div>
+            <div>
+                <h2>Using console.log()</h2>
+
+                <p>For debugging purpose, you can call the console.log() method in the browser to display data.</p>
+
+                <script>console.log(5 + 6);</script>
+            </div>
+            <div>
+                <h2>JavaScript Print</h2>
+
+                <p>JavaScript does not have any print object or print methods.</p>
+
+                <p>The only exception is that you can call the window.print() method in the browser to print the content of the current window.</p>
+
+                <p>Click the button to print the current page.</p>
+
+                <button onclick="window.print()">Print this page</button>
+            </div>
+        </section>
+    </section>
+    <script src="javascriptintro.js"></script>
+</body>
+</html>
